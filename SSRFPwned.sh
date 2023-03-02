@@ -29,12 +29,6 @@ else
     echo "gf is already installed."
 fi
 
-# Copy gf patterns to proper directory
-if [ ! -d "$HOME/.gf" ]
-then
-    mkdir "$HOME/.gf"
-fi
-cp -r $GOPATH/pkg/mod/github.com/tomnomnom/gf@*/examples ~/.gf
 
 # Check for and install lolcat
 if ! command -v lolcat &> /dev/null
