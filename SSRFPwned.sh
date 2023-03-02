@@ -1,47 +1,4 @@
 #!/bin/bash
-
-echo "Installing Dependencies..."
-sleep 1
-# Check for and install waybackurls
-if ! command -v waybackurls &> /dev/null
-then
-    echo "waybackurls could not be found. Installing..."
-    go install -v github.com/tomnomnom/waybackurls@latest
-else
-    echo "waybackurls is already installed."
-fi
-
-# Check for and install httpx
-if ! command -v httpx &> /dev/null
-then
-    echo "httpx could not be found. Installing..."
-    go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
-else
-    echo "httpx is already installed."
-fi
-
-# Check for and install gf
-if ! command -v gf &> /dev/null
-then
-    echo "gf could not be found. Installing..."
-    go install -v github.com/tomnomnom/gf@latest
-else
-    echo "gf is already installed."
-fi
-
-
-# Check for and install lolcat
-if ! command -v lolcat &> /dev/null
-then
-    echo "lolcat could not be found. Installing..."
-    sudo pip install lolcat
-else
-    echo "lolcat is already installed."
-fi
-
-# Move gf to /usr/local/bin
-sudo cp $GOPATH/bin/* /usr/local/bin/
-clear
 curl --silent "https://raw.githubusercontent.com/blackhatethicalhacking/Subdomain_Bruteforce_bheh/main/ascii.sh" | lolcat
 echo ""
 # Generate a random Sun Tzu quote for offensive security
