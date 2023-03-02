@@ -82,7 +82,7 @@ while read url; do
   while read payload; do
     # Inject payload into each parameter and test URL
     full_url="$url$payload"
-    echo -ne "[*] Testing $full_url -->"
+    echo -ne "[*] Testing $full_url --> "
     response=$(curl -s -o /dev/null -w "%{http_code}" "$full_url")
 
     if [[ $response == 200 && $(curl -s "$full_url" | grep -q "$payload") ]]; then
