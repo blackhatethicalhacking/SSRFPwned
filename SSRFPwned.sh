@@ -91,13 +91,7 @@ while read url; do
     else
       echo -e "\033[0;31mNot vulnerable\033[0m"
     fi
-
-    # Sleep for 1 second before testing the next payload
-    sleep 1
   done < "$output_dir/merged_payloads.txt"
-
-  # Sleep for 5 seconds before testing the next URL
-  sleep 1
 done < "$output_dir/final_urls.txt"
 
 # Count the number of vulnerable URLs found and print the total
