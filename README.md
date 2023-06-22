@@ -44,7 +44,7 @@ SSRFPwned is a Penetration Testing and Bug Bounty Offensive Security Tool that a
 
 SSRFPwned is unique because it combines multiple sources for URL discovery, including the Wayback Machine, URLScan and AlienVault. The tool is also highly customizable, allowing users to add their own payloads for testing specific types of SSRF vulnerabilities. Additionally, the tool is designed to be efficient and scalable, allowing users to test thousands of URLs at once. It is also special because the way it filters the URLs based on using GF to specifically filter out with Regex only the ones that matches the SSRF Pattern, but also cleaning the parameters from values so it can then inject it there. The way it checks also if it is vulnerable or not, checks also for reflected traces of the payload in the response and if it has 200 code to give the result.
   
-It is also Special well, because you will:
+It is also Special well because you will:
   
 ![giphy](https://user-images.githubusercontent.com/13942386/222453411-18efb5a7-6546-4ed0-8bed-5eb6431597bc.gif)
 
@@ -95,7 +95,8 @@ Feel free to expand more Pocs, and integrate it, the idea is speed, and sending 
 
 # Screenshot
 
-<img width="960" alt="Screenshot 2023-03-02 at 4 11 00 PM" src="https://user-images.githubusercontent.com/13942386/222452352-5b5df56d-0fe0-47e3-8a1d-4e4c87560791.png">
+![Screenshot 2023-06-22 at 9 59 56 PM](https://github.com/blackhatethicalhacking/SSRFPwned/assets/13942386/e7bcbfa9-2420-48a3-976f-b49c23050f7b)
+
 
 # Compatibility: 
 
