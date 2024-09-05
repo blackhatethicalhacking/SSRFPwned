@@ -14,7 +14,7 @@ echo "MEANS, IT'S ☕ 1337 ⚡ TIME, 369 ☯ " | lolcat
 sleep 1
 figlet -w 80 -f small SSRFPwned | lolcat
 echo ""
-echo "[YOUR ARE USING SSRFPwned.sh] - (v1.0) CODED BY Chris 'SaintDruG' Abou-Chabké WITH ❤ FOR blackhatethicalhacking.com for Educational Purposes only!" | lolcat
+echo "[YOUR ARE USING SSRFPwned.sh] - (v1.0a) CODED BY Chris 'SaintDruG' Abou-Chabké WITH ❤ FOR blackhatethicalhacking.com for Educational Purposes only!" | lolcat
 sleep 1
 #check if the user is connected to the internet
 tput bold;echo "CHECKING IF YOU ARE CONNECTED TO THE INTERNET!" | lolcat
